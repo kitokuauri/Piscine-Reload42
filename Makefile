@@ -2,9 +2,11 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-# Definicion de drectorios
+# Definicion de directorios
 SRC_DIR = src
 OBJ_DIR = obj
+# Carpeta para archivos de cabecera .h
+# como una "interfaz"
 INCL_DIR = include
 
 # Definicion de los Archivos Fuente (.c) y Objetos (.o)
