@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:58:12 by aursuare          #+#    #+#             */
-/*   Updated: 2024/07/11 19:04:02 by aursuare         ###   ########.fr       */
+/*   Created: 2024/06/11 18:17:44 by aursuare          #+#    #+#             */
+/*   Updated: 2024/06/11 21:00:43 by aursuare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
-
-struct s_point
+int	ft_sqrt(int nb)
 {
-	int	x;
-	int	y;
-};
+	int	i;
 
-typedef struct s_point	t_point;
-
-#endif
+	i = 0;
+	if (nb <= 0)
+		return (0);
+	if (nb == 1)
+		return (1);
+	while (i <= nb / 2 && i <= 46341)
+	{
+		if (i * i == nb)
+			return (i);
+		i++;
+	}
+	return (0);
+}

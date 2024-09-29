@@ -1,24 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:58:12 by aursuare          #+#    #+#             */
-/*   Updated: 2024/07/11 19:04:02 by aursuare         ###   ########.fr       */
+/*   Created: 2024/06/11 17:28:49 by aursuare          #+#    #+#             */
+/*   Updated: 2024/06/12 18:00:44 by aursuare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+#include <stdio.h>
 
-struct s_point
+int	ft_iterative_factorial(int nb)
 {
-	int	x;
-	int	y;
-};
+	int	i;
+	int	result;
 
-typedef struct s_point	t_point;
+	i = 1;
+	result = 1;
+	if (nb >= 13)
+		return (0);
+	else if (nb > 0)
+	{
+		while (i <= nb)
+		{
+			result *= i;
+			i++;
+		}
+	}
+	else if (nb < 0)
+		result = 0;
+	return (result);
+}
+/*
+int	main(void)
+{
+	int	i;
 
-#endif
+	i = ft_iterative_factorial(7);
+	printf("%d", i);
+	return (0);
+}
+*/

@@ -1,1 +1,18 @@
-#define ABS(Value) (Value >= 0) Value : -Value
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/11 18:53:08 by aursuare          #+#    #+#             */
+/*   Updated: 2024/07/11 20:12:09 by aursuare         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(Value) (Value >= 0) ? Value : -Value
+
+#endif

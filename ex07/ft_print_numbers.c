@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:58:12 by aursuare          #+#    #+#             */
-/*   Updated: 2024/07/11 19:04:02 by aursuare         ###   ########.fr       */
+/*   Created: 2024/06/11 16:47:20 by aursuare          #+#    #+#             */
+/*   Updated: 2024/06/11 19:46:04 by aursuare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+int	ft_putchar(int c);
 
-struct s_point
+void	ft_print_numbers(void)
 {
-	int	x;
-	int	y;
-};
+	int	num;
 
-typedef struct s_point	t_point;
-
-#endif
+	num = 48;
+	while (num <= 57)
+	{
+		ft_putchar(num);
+		num++;
+	}
+}

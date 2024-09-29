@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:58:12 by aursuare          #+#    #+#             */
-/*   Updated: 2024/07/11 19:04:02 by aursuare         ###   ########.fr       */
+/*   Created: 2024/06/06 18:10:18 by aursuare          #+#    #+#             */
+/*   Updated: 2024/06/11 19:45:18 by aursuare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+int	ft_putchar(int c);
 
-struct s_point
+void	ft_print_alphabet(void)
 {
-	int	x;
-	int	y;
-};
+	int	letra;
 
-typedef struct s_point	t_point;
-
-#endif
+	letra = 97;
+	while (letra <= 122)
+	{
+		ft_putchar(letra);
+		letra++;
+	}
+}
+/*
+int	main(void)
+{
+	ft_print_alphabet();
+	return (1);
+}
+*/

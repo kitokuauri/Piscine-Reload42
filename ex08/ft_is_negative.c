@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aursuare <aursuare@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:58:12 by aursuare          #+#    #+#             */
-/*   Updated: 2024/07/11 19:04:02 by aursuare         ###   ########.fr       */
+/*   Created: 2024/06/11 17:05:52 by aursuare          #+#    #+#             */
+/*   Updated: 2024/06/12 17:59:11 by aursuare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+int	ft_putchar(int c);
 
-struct s_point
+void	ft_is_negative(int n)
 {
-	int	x;
-	int	y;
-};
-
-typedef struct s_point	t_point;
-
-#endif
+	if (n < 0)
+		ft_putchar('N');
+	else
+		ft_putchar('P');
+}
+/*
+int	main(void)
+{
+	ft_is_negative(3);
+	return (1);
+}
+*/
